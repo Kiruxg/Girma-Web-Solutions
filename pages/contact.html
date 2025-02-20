@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Web Agency</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="/">Girma Web Solutions</a></div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contact Hero -->
+      <section class="hero">
+        <div class="container">
+          <h1>Let's Work Together</h1>
+          <p class="subheadline">
+            Tell us about your project and we'll reply within 24 hours
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form">
+              <form id="projectForm" action="#" method="POST">
+                <div class="form-group">
+                  <label for="name" class="required">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="required">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+
+                <div class="form-group">
+                  <label for="business">Business Name</label>
+                  <input type="text" id="business" name="business" />
+                </div>
+
+                <div class="form-group">
+                  <label for="service" class="required">Service Needed</label>
+                  <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="basic">Basic Website ($250)</option>
+                    <option value="premium">Premium Website ($750)</option>
+                    <option value="management">
+                      Website Management ($99/mo)
+                    </option>
+                  </select>
+                </div>
+
+                <div class="form-group full-width">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                  <button type="submit" class="cta-button">Send Message</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <div class="info-card">
+                <h3>Quick Response</h3>
+                <p>
+                  We respond to all inquiries within 24 hours during business
+                  days.
+                </p>
+              </div>
+
+              <div class="info-card">
+                <h3>Contact Information</h3>
+                <ul class="contact-details">
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:kirubelgirma0@gmail.com"
+                      >kirubelgirma0@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+19514796430">(951) 479-6430</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="info-card">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Girma Web Solutions</h3>
+            <p>Creating websites that deliver results.</p>
+          </div>
+          <div class="footer-links">
+            <a href="contact.html">Contact</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Girma Web Solutions. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

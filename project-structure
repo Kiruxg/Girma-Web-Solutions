@@ -1,0 +1,11 @@
+web-agency/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── main.js
+├── pages/
+│   ├── services.html
+│   ├── portfolio.html
+│   └── contact.html
+└── images/ 
