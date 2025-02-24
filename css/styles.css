@@ -10,8 +10,8 @@
 }
 
 /* But allow text selection in specific elements */
-input, 
-textarea, 
+input,
+textarea,
 .contact-details a,
 .footer-info p {
   user-select: text;
@@ -22,8 +22,8 @@ textarea,
 }
 
 /* And keep pointer cursor for clickable elements */
-a, 
-button, 
+a,
+button,
 .cta-button,
 .mobile-menu,
 .close-menu {
@@ -160,7 +160,7 @@ body {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
@@ -441,7 +441,7 @@ footer {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 3rem;
 }
 
@@ -490,11 +490,11 @@ footer {
   .services-highlight {
     margin: 6rem 0;
   }
-  
+
   .services-highlight h2 {
     margin-bottom: 3rem;
   }
-  
+
   .service-highlight-card {
     margin-bottom: 2rem;
   }
@@ -985,10 +985,21 @@ body.menu-open {
   .project-results {
     grid-template-columns: 1fr;
   }
-  
+
   .project-images {
     grid-template-columns: 1fr;
   }
 }
 
+/* Add responsive breakpoints */
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
